@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GG-Gym</title>
-    <!-- Ion Icons Js -->
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <script src="main.js"></script>
     <link rel="stylesheet" href="FtinessCSS.css" /> 
 </head>
 
@@ -21,18 +19,53 @@
                 <ion-icon name="grid"></ion-icon>
             </div>
             <div class="logo">
-                <img src="GG.png"/>
+                <img src="./Gym Images/GG.png"/>
             </div>
 
             <ul class="nav">
                 <li class="nav-item"><a href="FtinessHTML.html">Home</a></li>
-                <li class="nav-item"><a href="Location.html">Location</a></li>
                 <li class="nav-item"><a href="Facilities.html">Facilities</a></li>
-                <li class="nav-item"><a href="Facilities.html">Promotions</a></li>
+                <li class="nav-item"><a href="Promotions.html">Promotions</a></li>
+                <li class="nav-item"><a href="Marketplace.html">Marketplace</a></li>
             </ul>
 
-            <a href="#" class="btn-4">Register</a>
-            <a href="#" class="btn-3">Log In</a>
+                        <!-- Button to open the modal login form -->
+                        <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+                        <!-- The Modal -->
+                        <div id="id01" action="action_page.php" class="modal">
+                        
+
+                        <!-- Modal Content -->
+                        <form class="modal-content animate">
+                            <div class="imgcontainer">
+                            <img src="https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png" alt="Avatar" class="avatar">
+                            </div>
+                            <span onclick="document.getElementById('id01').style.display='none'"class="close" title="Close Modal">&times;</span>
+                            <div class="containerreg">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+                             <br></br>   
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <button type="submit">Login</button>
+                            <label class="rem">
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                            
+                            </div>
+
+                            <div class="containerreg">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot password?</a></span>
+                            </div>
+                        </form>
+                        </div>
+
+            <a href="Register.html" class="btn-3">Register</a>
+
+            
         </div>
     </div>
     <!-- End Menu -->
@@ -55,7 +88,7 @@
             </div>
 
             <div class="visual">
-                <img src="Arnold.png" alt="" />
+                <img src="./Gym Images/Arnold.png" alt="" />
             </div>
         </div>
     </header>
@@ -66,7 +99,7 @@
         <div class="container flex">
 
             <div class="visual">
-                <img src="Arnold2.png" alt="" />
+                <img src="./Gym Images/Arnold2.png" alt="" />
             </div>
 
             <div class="text">
@@ -99,7 +132,7 @@
     <div class="section" id="explore">
         <div class="container flex">
             <div class="visual">
-                <img class="studio" src="Studio.png"/>
+                <img class="studio" src="./Gym Images/Studio.png"/>
             </div>
             <div class="text">
                 <h2 class="primary mb">
@@ -137,7 +170,7 @@
             </div>
 
             <div class="trainer">
-                <img src="Trainer2.png" alt="" />
+                <img src="./Gym Images/Trainer2.png" alt="" />
                 <h3 class="secondary mb">Lennox Mayer</h3>
                 <p class="tertiary mb">
                     Lennox Mayer, the aesthetics expert. He's all about helping you achieve your best look and boosting your confidence. 
@@ -150,7 +183,7 @@
             </div>
 
             <div class="trainer">
-                <img src="Trainer3.png" alt="" />
+                <img src="./Gym Images/Trainer3.png" alt="" />
                 <h3 class="secondary mb">Ashley Lawson</h3>
                 <p class="tertiary mb">
                     Ashley Lawson, your health training specialist. 
@@ -179,7 +212,7 @@
                 <br />
 
                 <div class="client">
-                    <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/client1.jpg" alt="" />
+                    <img src="https://freepngimg.com/thumb/arnold_schwarzenegger/29417-1-arnold-schwarzenegger-image.png" alt="" />
                     <h2 class="secondary">Excelent Training!</h2>
                     <p class="tertiary">
                         I'm thrilled with my experience at GG-Gym. 
@@ -191,7 +224,7 @@
                 </div>
             </div>
             <div class="visual">
-                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/testimonial.png" alt="" />
+                <img src="https://www.pngmart.com/files/22/Arnold-Schwarzenegger-PNG-Image.png" alt="" />
             </div>
         </div>
     </div>
@@ -201,7 +234,8 @@
     <div class="section" id="discount">
         <div class="container flex">
             <div class="visual">
-            <img src="https://www.pngall.com/wp-content/uploads/4/Arnold-Schwarzenegger-PNG-File.png" alt="" class="src">          
+            <img src="https://www.pngall.com/wp-content/uploads/4/Arnold-Schwarzenegger-PNG-File.png"> 
+            </div>        
                 <div class="text">
                 <h2 class="primary mb">
                     Promotions:
@@ -219,7 +253,7 @@
                     Our state-of-the-art equipment, motivating classes, and supportive community are all here to help you succeed.
                 </p>
 
-                <a href="#" class="btn bt">Learn More!</a>
+                <a href="Promotions.html" class="btn bt">Learn More!</a>
             </div>
         </div>
     </div>
