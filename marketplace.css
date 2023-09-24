@@ -234,3 +234,14 @@ section {
     color: var(--main-color);
     cursor: pointer;
 }
+
+button {
+    background-color: #4174e0;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 25px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    width: 9%;
+  }

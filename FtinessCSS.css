@@ -4,9 +4,8 @@
   --clr-primary: #4174e0;
 }
 
-*,
-*::after,
-*::before {
+
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -20,8 +19,8 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
-  background: radial-gradient(#615e5e, #0e0b16);
-  color: #fff;
+  background: white;
+  color: #030303;
   overflow-x: hidden;
 }
 
@@ -43,61 +42,21 @@ body {
   border-style: inset;
 }
 
-.header,
 .section {
   width: 100%;
   padding: 40px 0;
   overflow: hidden;
-}
-
-.header::after,
-.header::before,
-.section::after,
-.section::before {
-  content: "";
-  background: url(TB.png);
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  bottom: 0;
-}
-
-.header::after {
-  left: -200px;
-}
-
-.header::before {
-  right: -200px;
-}
-
-.mb {
-  margin-bottom: 30px;
-}
-
-.mt {
-  margin-top: 20px;
-}
-
-.section {
-  background: #1d1f1e;
+  background: #eaeef1;
   position: relative;
   padding: 80px 0;
 }
 
-.section::after {
-  left: -200px;
-}
-
-.section::before {
-  width: 600px;
-  right: -200px;
+.section span{
+  color: var(--clr-primary)
 }
 
 .section:nth-child(even) {
-  background: #141615;
+  background: #e7e1e7;
 }
 
 .section:nth-child(even)::after,
@@ -125,7 +84,7 @@ body {
 /* Menu */
 .menu {
   width: 100%;
-  background: linear-gradient(to left, #0e0e0e 70%, #615e5e);
+  background: white;
   padding: 12px 0;
 }
 
@@ -141,7 +100,7 @@ body {
 .logo img {
   width: 100px;
   height: auto;
-  margin-right: 30px;
+  margin: 30px;
   border-style: solid;
 }
 
@@ -157,7 +116,7 @@ body {
 
 .nav-item a {
   text-decoration: none;
-  color: #fff;
+  color: #020202;
 }
 
 .nav-item:hover a {
@@ -406,38 +365,6 @@ body {
   }
 }
 
-@media (max-width: 530px) {
-  .header::after,
-  .header::before,
-  .section::after,
-  .section::before {
-    display: none;
-  }
-
-  .primary {
-    font-size: 25px;
-  }
-
-  .secondary {
-    font-size: 20px;
-  }
-
-  .tertiary {
-    font-size: 12px;
-  }
-
-  .text h1 {
-    font-size: 34px;
-  }
-
-  .btn,
-  .btn-2 {
-    font-size: 16px;
-  }
-}
-
-/* End Responsive */
-
 /* Login Form */  
 /* Set a style for all buttons */
 button {
@@ -580,3 +507,54 @@ input[type=text], input[type=password] {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
   }
+
+  /* Gallery Section */
+.gcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px 30px 0 20px;
+}
+
+.gcontainer .gheading{
+  width: 30%;
+  padding-bottom: 15px;
+}
+
+.gcontainer .gheading h1 {
+  font-size: 3em;
+  font-weight: bolder;
+  border-top: 3px solid #222;
+
+}
+
+.gcontainer .gheading a {
+position: absolute;
+margin-bottom: 15px;
+left: 2%;
+top: 1%;
+
+}
+
+.gcontainer .gbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.gcontainer .gbox .gcol1 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.gcontainer .gbox .gcol1 img {
+  width: 550px;
+  height: 500px;
+  padding: 10px;
+  border-radius: 5px;
+}
