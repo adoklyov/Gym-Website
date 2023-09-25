@@ -6,12 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GG-Gym</title>
     <script src="main.js" type="module"></script>
-    <link rel="stylesheet" href="FtinessCSS.css" /> 
+    <link rel="stylesheet" href="fitness.css" /> 
 </head>
 <body>
+   <!-- Menu -->
+   <div class="menu">
+    <div class="container flex">
+        <!-- Mobile Button -->
+        <div class="mobile-btn">
+            <ion-icon name="grid"></ion-icon>
+        </div>
+        <div class="logo">
+            <img src="./Gym Images/GG.png"/>
+        </div>
+
+        <ul class="nav">
+            <li class="nav-item"><a href="fitness.html">Home</a></li>
+            <li class="nav-item"><a href="facilities.html">Facilities</a></li>
+            <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a href="marketplace.html">Marketplace</a></li>
+        </ul>
+
+                    <!-- Button to open the modal login form -->
+                    <button class="btn-3" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+                    <!-- The Modal -->
+                    <div id="id01" action="action_page.php" class="modal">
+                    
+
+                    <!-- Modal Content -->
+                    <form class="modal-content animate">
+                        <div class="imgcontainer">
+                        <img src="https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png" alt="Avatar" class="avatar">
+                        </div>
+                        <span onclick="document.getElementById('id01').style.display='none'"class="close" title="Close Modal">&times;</span>
+                        <div class="containerreg">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                         <br></br>   
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit">Login</button>
+                        <label class="rem">
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                        
+                        </div>
+
+                        <div class="containerreg">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot password?</a></span>
+                        </div>
+                    </form>
+                    </div>
+
+        <a href="Register.html" class="btn">Register</a>
+
+    </div>
+</div>
+<!-- End Menu -->
+
     <div class="gcontainer">
         <div class="gheading">
-            <a href="FtinessHTML.html" class="btn mt">Back to main.</a>
             <h1 class="gh1">Gallery</h1>
         </div>
         <div class="gbox">
